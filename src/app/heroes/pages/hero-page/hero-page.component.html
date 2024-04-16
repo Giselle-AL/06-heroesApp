@@ -1,2 +1,52 @@
-<p>hero-page works!</p>
+<ng-template #divloading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
 
+<div *ngIf="hero;else divloading" class="grid p-2">
+  <mat-card class="col-12 sm:col-6">
+    <mat-card-header>
+       <mat-card-title>{{hero.superhero}}</mat-card-title>
+       <mat-card-subtitle>{{hero.alter_ego}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img [src]="hero | heroImage" [alt]="hero.superhero" mat-card-image/>
+  </mat-card>
+
+  <mat-card class="col-12 sm:col-6">
+    <mat-card-title>Información de <strong>{{hero.superhero}}</strong></mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>
+         <p> <strong>Editorial:</strong> {{hero.publisher}}</p>
+        </mat-list-item>
+        <mat-list-item>
+          <p><strong>Primera aparición:</strong> {{hero.first_appearance}}</p>
+        </mat-list-item>
+        <mat-list-item>
+          <p><strong>Personajes:</strong> {{hero.characters}}</p>
+        </mat-list-item>
+        <mat-list-item>
+          <p> <strong>Alter-Ego:</strong> {{hero.alter_ego}}</p>
+        </mat-list-item>
+      </mat-list>
+
+      <button
+      mat-fab extended
+      class="border-round-3xl border-primary"
+      (click)="goBack()"
+      >
+      <mat-icon>arrow_back</mat-icon>
+      Regresar
+    </button>
+
+    </mat-card-content>
+
+
+  </mat-card>
+
+
+</div>

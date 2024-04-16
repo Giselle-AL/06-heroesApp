@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, catchError, of , map} from 'rxjs';
 import { Hero } from '../interfaces/hero.interface';
 import { environment } from '../../../environments/environments';
 
@@ -16,6 +16,17 @@ export class HeroesService {
   }
 
   getHeroById(id: string): Observable<Hero | undefined>  {
-    return this.http.get<Hero>(`${this.baseUrl}/heroes/${id}`);
+    return this.http.get<Hero>(`${this.baseUrl}/heroes/${id}`)
+    .pipe(
+      //el of es un observable que emite un valor y luego se completa, de lo contrario marcaría un error
+      catchError( error => of(undefined) )
+    );
   }
+
+  getSuggestions(query: string): Observable<Hero[]> {
+    return this.http.get<Hero[]>(`${this.baseUrl}/heroes`)
+        .pipe(
+            map (heroes => heroes.filter(hero => hero.superhero.toLowerCase().includes(query.toLowerCase())))
+        );
+}
 }
