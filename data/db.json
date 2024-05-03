@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "usuario": "John Doe",
       "email": "john.due@gmail.com"
     }
@@ -157,7 +157,8 @@
       "publisher": "Marvel Comics",
       "alter_ego": "Scott Summers",
       "first_appearance": "X-Men #1",
-      "characters": "Scott Summers"
+      "characters": "Scott Summers",
+      "alt_img": "https://i.pinimg.com/236x/01/ed/65/01ed65acc7b72032ff759b415ff76a15.jpg"
     },
     {
       "id": "marvel-silver",
@@ -166,6 +167,51 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "5Zco0yI",
+      "superhero": "Kyouko",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Sakura",
+      "first_appearance": "Madoka Magica",
+      "characters": "Lauren Landa",
+      "alt_img": "https://64.media.tumblr.com/381e04e8009ea7a3ee2e3f4cdcc202a5/509729c1ef527f50-f9/s1280x1920/fc25197ee2fc254b467345f717b3d80bef3b2ea9.jpg"
+    },
+    {
+      "id": "MIHOdvI",
+      "superhero": "Mami",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Tomoe",
+      "first_appearance": "Madoka mágica 2009",
+      "characters": "Mami tomoe",
+      "alt_img": "https://64.media.tumblr.com/46712a3483630e4fc869ce871dc67620/509729c1ef527f50-7e/s1280x1920/3b67083f5bfc49cf53d9c491ba9b1585f42b4f4e.jpg"
+    },
+    {
+      "id": "eRvJaWY",
+      "superhero": "Madoka",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Madoka",
+      "first_appearance": "Madoka mágica",
+      "characters": "Madoka",
+      "alt_img": "https://64.media.tumblr.com/c7738505ab7727aacce142941e0f9e51/509729c1ef527f50-b4/s1280x1920/1e301e6850c4c91cdacb703a0b87cf55e9017b9c.jpg"
+    },
+    {
+      "id": "xKLqBkT",
+      "superhero": "Sayaka",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Miki|",
+      "first_appearance": "Madoka mágica",
+      "characters": "Sayaka",
+      "alt_img": "https://64.media.tumblr.com/50138021b6c12579846eed636d82f9cc/509729c1ef527f50-97/s1280x1920/78df5aa2fc38ba746370e28c54c3e3cd3360c001.jpg"
+    },
+    {
+      "id": "5WUpFMh",
+      "superhero": "Homura",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Akemi",
+      "first_appearance": "Madoka Magica",
+      "characters": "Cristina Vee",
+      "alt_img": "https://64.media.tumblr.com/617347b23ba6dfaee5918e9e8d739188/509729c1ef527f50-00/s1280x1920/a6ac0267df3daddc97883728435cd13d455cfab8.jpg"
     }
   ]
 }

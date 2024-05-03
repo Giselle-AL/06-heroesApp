@@ -16,7 +16,7 @@
     <p>
       <strong>Primera aparición:</strong> {{hero.first_appearance}}
       <br>
-      <mat-chip-listbox>
+      <mat-chip-listbox >
         <mat-chip *ngFor="let name of hero.characters.split(',') | slice:0:3">
           {{name}}
         </mat-chip>
